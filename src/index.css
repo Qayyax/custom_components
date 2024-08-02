@@ -3,8 +3,13 @@
   box-sizing: border-box;
 }
 
-body {
-  text-align: center;
+.components {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  gap: 1rem;
 }
 
 .badge {
@@ -27,9 +32,76 @@ body {
 }
 
 .badges-container {
-  margin-top: 0.625em;
   display: inline-flex;
   width: 60%;
   flex-wrap: wrap;
   gap: 0.625rem;
+}
+
+/* Banner component*/
+.banner {
+  max-width: 56rem;
+  padding: 1rem;
+  display: flex;
+  column-gap: 0.75rem;
+  border-radius: 6px;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.banner-title {
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+.banner-child {
+  font-size: 0.875em;
+  font-weight: 400;
+}
+
+.success {
+  background-color: #ECFDF5;
+  color: #047857;
+}
+
+.warning {
+  background-color: #FFFBEB;
+  color: #B45309;
+}
+
+.error {
+  background-color: #FEF2F2;
+  color: #B45309;
+}
+
+.neutral {
+  background-color: #EFF6FF;
+  color: #1C51B9;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* margin-top: 10px; */
+}
+
+/*Text component*/
+.text-components {
+  align-self: flex-start;
+  border: 5px solid green;
+  width: 100%;
+  text-align: justify;
+}
+
+.text-components h1 {
+  text-align: center;
+}
+
+.text-components p {
+  margin-bottom: 5px;
 }

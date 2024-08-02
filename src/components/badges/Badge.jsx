@@ -1,4 +1,4 @@
-export default function Badge({ children, theme, border }) {
+export default function Badge({ children, theme = "gray", border = "pill" }) {
     const colors = {
         gray: {
             text: "#1F2937",
@@ -45,3 +45,18 @@ export default function Badge({ children, theme, border }) {
         </div>
     )
 }
+
+export const badgeProps = [
+    {
+        name: "theme",
+        description: "This is the color scheme of the badge component"
+    },
+    {
+        name: "border",
+        description: "This is the border type of the badge component (square or pill)"
+    },
+    {
+        name: "children",
+        description: "This is text inside the badge"
+    }
+]
