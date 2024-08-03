@@ -49,3 +49,30 @@ import Banner from "../components/banners/Index";
 Available status include: `"success"`, `"warning"`, `"error"`, `"neutral"`
 
 > Passing the wrong status would default to neutral
+
+
+## Text Component
+
+Example use:
+
+```jsx
+import Text from "../components/text/Text"
+
+const badgeProps = [
+    {
+        name: "theme",
+        description: "This is the color scheme of the badge component"
+    },
+    {
+        name: "border",
+        description: "This is the border type of the badge component (square or pill)"
+    },
+    {
+        name: "children",
+        description: "This is text inside the badge"
+    }
+]
+
+// props expexts []{name:string, description:string}
+<Text name="Badge" props={badgeProps} />
+```
