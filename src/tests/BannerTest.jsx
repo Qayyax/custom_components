@@ -1,4 +1,4 @@
-import Banner from "../components/banners/Banner";
+import Banner from "../components/banners/Index";
 import { nanoid } from "nanoid";
 
 export default function BannerTest() {
@@ -18,7 +18,9 @@ export default function BannerTest() {
 
   return (
     tests.map(test => (
-      <Banner key={nanoid()} status={test.status} title={test.title}>{test.children}</Banner> 
+      <Banner key={nanoid()} status={test.status} title={test.title}>
+        <Banner.BannerItem> {test.children} </Banner.BannerItem>
+      </Banner>
     ))
   )
 }
@@ -34,6 +36,6 @@ export const bannerProps = [
   },
   {
     name: "children",
-    description: "Text inside the banner"
+    description: "Text or jsx item (<Banner.BannerItem/>) inside the banner"
   }
 ]

@@ -34,6 +34,11 @@ export default function Badge({ children, theme = "gray", border = "pill" }) {
         }
     }
 
+    if (!(theme in colors)) {
+        console.log("Invalid color, defaulted to gray")
+        theme = "gray"
+    }
+
     return (
         <div
             className={`badge ${border}`}
