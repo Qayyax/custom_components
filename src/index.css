@@ -93,7 +93,6 @@
 /*Text component*/
 .text-components {
   align-self: flex-start;
-  border: 5px solid green;
   width: 100%;
   text-align: justify;
 }
