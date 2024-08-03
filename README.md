@@ -73,6 +73,6 @@ const badgeProps = [
     }
 ]
 
-// props expexts []{name:string, description:string}
+// props expects []{name:string, description:string}
 <Text name="Badge" props={badgeProps} />
 ```
